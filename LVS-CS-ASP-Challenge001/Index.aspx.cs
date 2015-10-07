@@ -13,5 +13,17 @@ namespace LVS_CS_ASP_Challenge001
         {
 
         }
+
+        protected void okButton_Click(object sender, EventArgs e)
+        {
+            string age = ageInputTextBox.Text;
+            string money = moneyInputTextBox.Text;
+
+            string r = "At "+age+" years old, I would have expected you to have more than $"+money+" pesos in your pocket";
+
+            resultLabel.Text = r;
+
+
+        }
     }
 }
